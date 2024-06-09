@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>Enciclopedia Marvel</title>
+    <!-- Aquí puedes vincular tu archivo CSS -->
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <main>
+        <div id="mensajeError" style="display:none;">
+            <!-- El mensaje de error se mostrará aquí -->
+        </div>
+        <!-- Sección de la historia -->
+        <section id="historia">
+            <h1>Enciclopedia de Personajes de Marvel</h1>
+        <nav>
+            <ul>
+                <li><a href="heores.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-raised-hand" viewBox="0 0 16 16">
+                    <path d="M6 6.207v9.043a.75.75 0 0 0 1.5 0V10.5a.5.5 0 0 1 1 0v4.75a.75.75 0 0 0 1.5 0v-8.5a.25.25 0 1 1 .5 0v2.5a.75.75 0 0 0 1.5 0V6.5a3 3 0 0 0-3-3H6.236a1 1 0 0 1-.447-.106l-.33-.165A.83.83 0 0 1 5 2.488V.75a.75.75 0 0 0-1.5 0v2.083c0 .715.404 1.37 1.044 1.689L5.5 5c.32.32.5.754.5 1.207"/>
+                    <path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+                  </svg> Héroes</a></li>
+                <li><a href="villanos.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-arms-up" viewBox="0 0 16 16">
+                    <path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+                    <path d="m5.93 6.704-.846 8.451a.768.768 0 0 0 1.523.203l.81-4.865a.59.59 0 0 1 1.165 0l.81 4.865a.768.768 0 0 0 1.523-.203l-.845-8.451A1.5 1.5 0 0 1 10.5 5.5L13 2.284a.796.796 0 0 0-1.239-.998L9.634 3.84a.7.7 0 0 1-.33.235c-.23.074-.665.176-1.304.176-.64 0-1.074-.102-1.305-.176a.7.7 0 0 1-.329-.235L4.239 1.286a.796.796 0 0 0-1.24.998l2.5 3.216c.317.316.475.758.43 1.204Z"/>
+                  </svg> Villanos</a></li>
+                <li><a href="historias.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
+                    <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/>
+                  </svg> Historias Clásicas</a></li>
+                <li><a href="peliculas.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-film" viewBox="0 0 16 16">
+                    <path d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm4 0v6h8V1zm8 8H4v6h8zM1 1v2h2V1zm2 3H1v2h2zM1 7v2h2V7zm2 3H1v2h2zm-2 3v2h2v-2zM15 1h-2v2h2zm-2 3v2h2V4zm2 3h-2v2h2zm-2 3v2h2v-2zm2 3h-2v2h2z"/>
+                  </svg> Películas</a></li>
+                <!-- Agrega los botones de buscar y borrar aquí -->
+                <li>
+                    <form id="searchForm">
+                        <input type="text" id="searchInput" placeholder="Buscar personaje...">
+                        <button type="button" id="searchButton" class="btn btn-danger"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                          </svg> Buscar
+                        </button>
+                        <button type="button" id="btnBorrar" class="btn btn-danger">Borrar <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+                            <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47M8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5"/>
+                          </svg>
+                        </button>
+                </li>
+            </ul>
+        </nav>
+            <h2>Historia</h2>
+            <!-- Aquí irá la información de la historia -->
+            <article class="historia">
+                <p>
+                    Marvel Comics es una de las editoriales de cómics más reconocidas y exitosas del mundo. Fundada
+                    originalmente como Timely Publications en 1939 por Martin Goodman, Marvel se destacó inicialmente
+                    con personajes como la Antorcha Humana original, Namor el Submarino y el Ángel.
+                </p>
+                <p>
+                    En la década de 1960, bajo la dirección de Stan Lee y con la colaboración de artistas legendarios
+                    como Jack Kirby y Steve Ditko, Marvel inició una nueva era en la narrativa de superhéroes. Crearon
+                    personajes icónicos como Spider-Man, los X-Men, Iron Man, Thor, Hulk, y los Cuatro Fantásticos, que
+                    no solo poseían poderes extraordinarios sino también profundidades emocionales y problemas
+                    personales con los que los lectores podían identificarse.
+                </p>
+                <p>
+                    La “Era Marvel de los Cómics” transformó la industria y estableció a Marvel como una fuerza cultural
+                    dominante. En 2009, The Walt Disney Company adquirió Marvel Entertainment, ampliando aún más el
+                    alcance y la influencia de Marvel en el entretenimiento global1. Hoy en día, Marvel no solo es
+                    sinónimo de cómics, sino también de películas, series de televisión y una vasta gama de productos de
+                    merchandising que continúan capturando la imaginación de audiencias de todas las edades alrededor
+                    del mundo
+                </p>
+            </article>
+        </section>
+        <!-- Sección de Timely Publications (1939-1952) -->
+        <section id="Timely">
+            <h2>Timely Publications (1939-1952)</h2>
+            <!-- Aquí irá la información de Timely Publications (1939-1952) -->
+            <article class="timely">
+                <p>
+                    El primer cómic de Timely Comics, apareció con fecha de portada en octubre de 1939. Aquel primer
+                    número incluía las aventuras de los tres primeros superhéroes de la editorial, el androide conocido
+                    como la Antorcha Humana, el antihéroe Namor y el Ángel (sin relación con el personaje de los X-Men),
+                    creados por Carl Burgos, Bill Everett y Paul Gustavson respectivamente. Las ventas debieron de ser
+                    buenas, porque en los meses siguientes Timely lanzó nuevos títulos como Daring Mystery Comics y
+                    Mistic Comics, también dedicados a los superhéroes. En un primer momento, puesto que todo el trabajo
+                    creativo se realizaba en las oficinas de Funnies Inc.
+                </p>
+                <p>
+                    La plantilla de Timely consistía exclusivamente en familiares de Goodman, que solían encargarse de
+                    trabajos más técnicos como llevar las cuentas o tratar con la imprenta. No obstante, a medida que
+                    las ventas fueron mejorando, Goodman se interesó por formar su propia plantilla y reclutó a una
+                    docena de artistas de Funnies Inc. a los que atrajo pagando mejores sueldos; a la cabeza de ellos
+                    estaba el nuevo editor de Timely, un joven pero experimentado dibujante de 26 años llamado Joe
+                    Simon.
+                </p>
+                <p>
+                    Bajo la batuta de Joe Simon, Timely aumentó sus colecciones y se centró en los superhéroes, que eran
+                    el género más popular del momento. La Antorcha Humana obtuvo su propia serie a finales de 1940,
+                    Human Torch Comics, y unos meses después también la consiguió Namor, con Sub-Mariner Comics, pero el
+                    personaje más popular de la editorial sería el Capitán América, creado por Joe Simon y su compañero
+                    Jack Kirby, aparecido en el primer número de Captain America Comics con fecha de portada de marzo de
+                    1941.
+                </p>
+            </article>
+        </section>
+        <!-- Otras secciones... -->
+        <!-- Sección de Atlas Comics (1952-1961) -->
+        <section id="Atlas">
+            <h3>Atlas Comics (1952-1961)</h3>
+            <!-- Aquí irá la información de Atlas Comics (1952-1961) -->
+            <article class="atlas">
+                <p>
+                    El fin de los superhéroes no supuso ningún revés para la empresa de Martin Goodman, que en 1950
+                    publicaba más títulos que nunca realizados por una plantilla de unos veinte artistas que cobraban un
+                    sueldo fijo.
+                </p>
+                <p>
+                    No obstante, Goodman decidió hacer cambios para hacer más competitiva la editorial y más rentable el
+                    negocio: en primer lugar, acabó con los sueldos fijos de su plantilla y estableció un sistema de
+                    remuneración por el cual los autores cobraban por trabajo entregado; posteriormente creó su propia
+                    distribuidora, Atlas News, que se encargaba de llevar a los puntos de venta tanto sus cómics como
+                    sus revistas. </p>
+                <p>
+                    A partir de ese momento, los cómics de Goodman aparecieron bajo el logo de Atlas.
+                </p>
+                <p>
+                    La caída de ventas hizo que Goodman cerrase Atlas News en 1957, que ya no era rentable, y firmase un
+                    acuerdo con la principal distribuidora de cómics del país, American News Company; sin embargo, poco
+                    después de firmar el acuerdo la distribuidora cerró y dejó a Goodman sin posibilidad de llevar sus
+                    cómics a los puntos de venta.
+                </p>
+            </article>
+        </section>
+        <section id="Marvel">
+            <h2>Marvel Comics (1961-1967)</h2>
+            <!-- Aquí irá la información de Marvel Comics (1961-1967) -->
+            <article class="marvel">
+                <p>
+
+                    En 1961, la compañía se renombró como Marvel Comics con el lanzamiento de “Los 4 Fantásticos” por
+                    Stan Lee y Jack Kirby.
+                </p>
+                <p>
+                    Los 4 Fantásticos serían el pistoletazo de salida para otras series y personajes, como Ant-Man en el
+                    número de Tales to Astonish de enero de 1962, Hulk en el último número de The Incredible Hulk en
+                    mayo de 1962, Spider-Man en el último número de Amazing Fantasy en agosto de 1962, Thor en el número
+                    de Journey Into Mystery de agosto de 1962, Iron Man en el número de Tales of Suspense de marzo de
+                    1963, la Avispa en el número de Tales to Astonish de junio de 1963 y el Doctor Extraño en el número
+                    de Strange Tales de junio de 1963.
+                </p>
+                <p>
+                    Durante los años 60, Marvel creó muchos de sus personajes más famosos, incluyendo a Spider-Man, los
+                    X-Men, Hulk, Iron Man, Thor y más.
+                <p>
+                    El éxito de estos personajes hizo que la compañía, que ahora respondía al nombre de Marvel Comics,
+                    se lanzase a publicar dos series de superhéroes en septiembre de 1963, The Avengers y los X-Men.
+                </p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Enciclopedia Marvel. Todos los derechos reservados.</p>
+    </footer>
+    <!-- Aquí puedes vincular tu archivo JavaScript -->
+    <script src="js/js.js"></script>
+</body>
+</html>

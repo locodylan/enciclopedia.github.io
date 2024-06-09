@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  header { 
+    background-image: url('Diseño2.png');
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 10px solid #e20c0c;
+    border-radius: 10px;
+    width: 100%; /* Anchura del header igual a la del cuerpo */
+    display: flex; /* Convertir la sección en un contenedor flexible */
+    flex-direction: column; /* Establecer la dirección del contenedor flexible */
+    align-items: center; /* Centrar los elementos dentro del contenedor flexible */
+  }
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #ffffff;
+    background-color: #f9f9f9;
+    display: flex; /* Convertir la sección en un contenedor flexible */
+    flex-direction: column; /* Establecer la dirección del contenedor flexible */
+    align-items: center; /* Centrar los elementos dentro del contenedor flexible */
+    background-image: url('Diseño.png');
+    background-size: cover; /* para que la imagen se ajuste al tamaño de la pantalla */
+    background-position: center; /* para que la imagen se centre */
+  }
+  
+  h1, h2, h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #ff1E00;
+  }
+  
+  a:hover {
+    color: #fff;
+  }
+  
+  /* Estilos para la navegación */
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #fff;
+    background-color: #d51900;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  
+  nav a:hover {
+    opacity: 0.8; /* Opacidad reducida */
+    background-color: #640c00;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Alinea los elementos de la lista horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    
+  }
+  
+  nav li {
+    margin-right: 10px; /* Espaciado entre los elementos de la lista */
+    
+  }
+  
+  #searchForm {
+    display: flex; /* Alinea los campos de entrada y botones horizontalmente */
+  }
+  
+  #searchInput {
+    margin-right: 5px; /* Espaciado entre el campo de entrada y el botón */
+    
+  }
+  /* Estilo para el botón Buscar */
+#searchButton {
+  color: #fff;
+  background-color: #d51900;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer; /* Cursor en forma de mano al pasar el mouse */
+  font-size: 16px; /* Tamaño del texto */
+}
+
+/* Estilo para el botón Borrar */
+#btnBorrar {
+  color: #fff;
+  background-color: #d51900;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 16px; /* Tamaño del texto */
+}
+
+/* Estilo para los botones al pasar el mouse por encima */
+#searchButton:hover, #btnBorrar:hover {
+  opacity: 0.8; /* Opacidad reducida */
+  background-color: #640c00;
+}
+  /* Estilos para la sección de heroes y villanos */
+  
+  section {
+    background-color: #200000;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(179, 5, 5, 0.1);
+    max-width: 100%; /* Ancho máximo relativo al viewport */
+    margin: 0 auto; /* Centrar la sección */
+    display: flex; /* Convertir la sección en un contenedor flexible */
+    flex-direction: column; /* Establecer la dirección del contenedor flexible */
+    align-items: center; /* Centrar los elementos dentro del contenedor flexible */
+  }
+  
+  article {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 10px solid #e20c0c;
+    border-radius: 10px;
+    text-align: center;
+    flex-direction: column; /* Establecer la dirección del contenedor flexible */
+    align-items: center; /* Centrar los elementos dentro del contenedor flexible */
+  }
+  
+  article img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  article h3 {
+    margin-top: 0;
+  }
+  
+  article p {
+    margin-bottom: 10px;
+  }
+  
+  article a {
+    display: block;
+    background-color: #d51900;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  article a:hover {
+    background-color: #640c00;
+  }
+  #mensajeError {
+    display: none; /* Inicialmente oculto */
+    color: #fff; /* Color del texto */
+    background-color: #200000; /* Color de fondo */
+    border: 1px solid #d51900; /* Borde del mensaje */
+    padding: 10px; /* Espaciado interno */
+    margin: 10px 0; /* Espaciado externo */
+    border-radius: 5px; /* Bordes redondeados */
+    text-align: center; /* Alineación del texto */
+    font-weight: bold; /* Negrita para el texto */
+  }
+  /* Estilos para el footer */
+  
+  footer {
+    color: #cecece;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+  }
+  
+  footer p {
+    margin-bottom: 0;
+  }
+
+
+  #resultadosBusqueda {
+    background-color: #200000;
+    
+}
+  
+ 

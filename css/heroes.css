@@ -1,0 +1,21 @@
+section {
+    background-color: #200000;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(179, 5, 5, 0.1);
+    max-width: 100%; /* Ancho máximo relativo al viewport */
+    margin: 0 auto; /* Centrar la sección */
+    display: flex; /* Convertir la sección en un contenedor flexible */
+    flex-direction: column; /* Establecer la dirección del contenedor flexible */
+    align-items: center; /* Centrar los elementos dentro del contenedor flexible */
+  }
+  
+  article {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 10px solid #e20c0c;
+    border-radius: 10px;
+    text-align: center;
+    flex-direction: column; /* Establecer la dirección del contenedor flexible */
+    align-items: center; /* Centrar los elementos dentro del contenedor flexible */
+  }
